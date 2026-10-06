@@ -9,6 +9,7 @@ __pycache__/
 
 # Jupyter temporary files
 .ipynb_checkpoints/
+Exam_NetworkCoordination_Presentation.ipynb
 
 # Local editor and OS files
 .vscode/
