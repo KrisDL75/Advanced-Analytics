@@ -1,0 +1,5 @@
+torch==2.14.0
+networkx>=3.4,<4.0
+matplotlib>=3.9,<4.0
+jupyter>=1.1,<2.0
+ipykernel>=6.29,<8.0
