@@ -5,11 +5,10 @@ Projet d'examen sur les cascades de coordination, le jeu de majorite et l'appren
 ## Fichiers
 
 - `Exam_NetworkCoordination.ipynb` : notebook principal avec les experiences et leurs sorties.
-- `Exam_NetworkCoordination_Presentation.ipynb` : support de presentation.
 - `gnn_game_experiment.py` : generation des graphes, labels, modele GNN et modele de reference.
 - `gnn_game_diagnostics.py` : diagnostics des donnees et comparaison des modeles sur plusieurs graines.
 
-Les sorties enregistrees dans les notebooks sont conservees pour presenter les resultats sans relancer toutes les cellules.
+Les sorties enregistrees dans le notebook principal sont conservees pour presenter les resultats sans relancer toutes les cellules.
 
 ## Prerequis
 
