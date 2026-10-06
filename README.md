@@ -1,22 +1,22 @@
 # Network Coordination Game and GNN
 
-Projet d'examen sur les cascades de coordination, le jeu de majorite et l'apprentissage d'une regle de meilleure reponse avec un petit reseau de neurones sur graphes (GNN).
+Exam project on coordination cascades, the majority game, and learning a best-response rule with a small graph neural network (GNN).
 
-## Fichiers
+## Files
 
-- `Exam_NetworkCoordination.ipynb` : notebook principal avec les experiences et leurs sorties.
-- `gnn_game_experiment.py` : generation des graphes, labels, modele GNN et modele de reference.
-- `gnn_game_diagnostics.py` : diagnostics des donnees et comparaison des modeles sur plusieurs graines.
+- `Exam_NetworkCoordination.ipynb`: Main notebook with the experiments and their outputs.
+- `gnn_game_experiment.py`: Graph and label generation, GNN model, and baseline model.
+- `gnn_game_diagnostics.py`: Dataset diagnostics and model comparison across multiple random seeds.
 
-Les sorties enregistrees dans le notebook principal sont conservees pour presenter les resultats sans relancer toutes les cellules.
+The saved outputs in the main notebook are kept so the results can be presented without rerunning every cell.
 
-## Prerequis
+## Requirements
 
-Python 3.10 ou plus recent, avec une version de PyTorch compatible avec Python et le systeme. Le projet a ete prepare avec PyTorch 2.14.0 et Python 3.14.4.
+Python 3.10 or newer, with a version of PyTorch compatible with Python and your operating system. The project was prepared with PyTorch 2.14.0 and Python 3.14.4.
 
-## Installation sous Windows
+## Installation on Windows
 
-Depuis ce dossier, dans PowerShell :
+From this directory, run the following commands in PowerShell:
 
 ```powershell
 py -3.14 -m venv .venv
@@ -25,22 +25,21 @@ py -3.14 -m venv .venv
 .\.venv\Scripts\python.exe -m ipykernel install --user --name network-coordination --display-name "Python (Network Coordination)"
 ```
 
-Dans VS Code, ouvrir le notebook et selectionner le kernel `Python (Network Coordination)`. Pour lancer Jupyter depuis le terminal :
+In VS Code, open the notebook and select the `Python (Network Coordination)` kernel. To start Jupyter from the terminal:
 
 ```powershell
 .\.venv\Scripts\python.exe -m jupyter notebook
 ```
 
-## Execution des scripts
+## Running the Scripts
 
 ```powershell
 .\.venv\Scripts\python.exe gnn_game_experiment.py
 .\.venv\Scripts\python.exe gnn_game_diagnostics.py
 ```
 
-Le notebook principal contient egalement les experiences de cascades et de jeu de majorite, puis importe `run_single` depuis `gnn_game_diagnostics.py` pour la partie GNN.
+The main notebook also contains the cascade and majority-game experiments, then imports `run_single` from `gnn_game_diagnostics.py` for the GNN section.
 
 ## Google Colab
 
-Ouvrir le notebook dans Colab, puis televerser `gnn_game_diagnostics.py` et `gnn_game_experiment.py` dans la session. Ils doivent etre dans le repertoire courant du notebook (generalement `/content`) avant d'executer la cellule GNN. PyTorch est normalement deja installe dans l'environnement Colab.
-
+Open the notebook in Colab, then upload `gnn_game_diagnostics.py` and `gnn_game_experiment.py` to the session. They must be in the notebook's current directory (usually `/content`) before running the GNN cell. PyTorch is usually already installed in Colab.
